@@ -4,6 +4,9 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Period;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.util.Scanner;
 
 public class Dates {
 
@@ -46,7 +49,12 @@ public class Dates {
 		
 		//Zoned date and time
 		
+		ZoneId in =ZoneId.of("America/New_York");
+		ZonedDateTime zt=ZonedDateTime.now(in);
+		System.out.println(zt);
 		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a year :  ");
 		
 	}
 
